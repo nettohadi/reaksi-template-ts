@@ -10,7 +10,7 @@ module.exports = {
         publicPath: "/public/",
     },
     devServer: {
-        port: 3333,
+        port: 3334,
         contentBase: path.resolve(__dirname, 'public'),
         filename: 'reaksi-template.js',
     },
