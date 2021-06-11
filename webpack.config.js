@@ -12,8 +12,10 @@ module.exports = {
     },
     devServer: {
         port: 3334,
+        historyApiFallback: true,
         contentBase: path.resolve(__dirname, 'public'),
         filename: 'reaksi-template.js',
+        hot: true
     },
     mode: "development",
     module: {

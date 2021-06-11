@@ -16,7 +16,7 @@
   "author": "hadi_sy",
   "license": "ISC",
   "dependencies": {
-    "reaksi": "latest"
+    "reaksi": "^1.0.41"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",

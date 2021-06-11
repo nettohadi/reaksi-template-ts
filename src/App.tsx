@@ -1,14 +1,21 @@
-import Reaksi, {useState} from "reaksi";
+import Reaksi, {useState, Router, Route, useRouter} from "reaksi";
+import Home from "./components/Home";
+import About from "./components/About";
 
 export default function App(){
-    const [count, setCount] = useState(0);
+    const router = useRouter();
     return (
-        <div>
-            <h2>Count : {count}</h2>
-           <div>
-               <button onclick={() => setCount(count => count + 1)}>+</button>
-               <button onclick={() => setCount(count - 1)}>-</button>
-           </div>
-        </div>
+        <Router>
+            <div>
+                <button onclick={() => router.push('/')}>Home</button>
+                <button onclick={() =>router.push('/about')}>About</button>
+            </div>
+            <Route path='/' exact>
+                <Home/>
+            </Route>
+            <Route path='/about' exact>
+                <About/>
+            </Route>
+        </Router>
     );
 }
