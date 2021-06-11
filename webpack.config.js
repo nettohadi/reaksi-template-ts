@@ -7,14 +7,14 @@ module.exports = {
     entry: './src/index.tsx',
     output : {
         path: path.resolve(__dirname, 'public'),
-        filename: 'js/reaksi-template.js',
+        filename: 'js/bundle.js',
         publicPath: "/public/",
     },
     devServer: {
         port: 3334,
         historyApiFallback: true,
         contentBase: path.resolve(__dirname, 'public'),
-        filename: 'reaksi-template.js',
+        filename: 'bundle.js',
         hot: true
     },
     mode: "development",
