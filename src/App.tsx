@@ -1,4 +1,4 @@
-import Reaksi, {useState, Router, Route, useRouter} from "reaksi";
+import {useState, Router, Route, useRouter} from "reaksi";
 import Home from "./components/Home";
 import About from "./components/About";
 
