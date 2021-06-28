@@ -11,12 +11,13 @@
   },
   "keywords": [
     "reaksi",
-    "template"
+    "template",
+    "typescript"
   ],
   "author": "hadi_sy",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
-    "reaksi": "^1.0.41"
+    "reaksi": "latest"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
@@ -25,6 +26,7 @@
     "@babel/preset-env": "^7.14.4",
     "@babel/preset-typescript": "^7.13.0",
     "babel-loader": "^8.2.2",
+    "babel-plugin-auto-import": "^1.1.0",
     "css-loader": "^5.2.6",
     "html-webpack-plugin": "^5.3.1",
     "style-loader": "^2.0.0",
