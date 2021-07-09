@@ -8,7 +8,7 @@ export default function App(){
         <Router>
             <div>
                 <button onclick={() => router.push('/')}>Home</button>
-                <button onclick={() =>router.push('/about')}>About</button>
+                <button onclick={() => router.push('/about')}>About</button>
             </div>
             <Route path='/' exact>
                 <Home/>

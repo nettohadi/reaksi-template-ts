@@ -9,13 +9,14 @@ module.exports = {
     output : {
         path: path.resolve(__dirname, 'public'),
         filename: 'js/bundle.js',
-        publicPath: "/public/",
+        publicPath: "/public/"
     },
     devServer: {
         port: 3334,
         historyApiFallback: true,
-        contentBase: path.resolve(__dirname, 'public'),
+        contentBase: path.resolve(__dirname, ''),
         filename: 'bundle.js',
+        publicPath: "/",
         hot: true
     },
     mode: "development",
@@ -55,7 +56,7 @@ module.exports = {
     plugins: [new htmlWebpackPlugin({
         filename: "index.html",
         hash: true,
-        publicPath: devMode ? '/public/' : '/',
+        publicPath:  '/',
         template: './html_template/index.html'
     })],
     optimization: {

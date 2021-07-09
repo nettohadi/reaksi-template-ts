@@ -17,7 +17,7 @@
   "author": "hadi_sy",
   "license": "MIT",
   "dependencies": {
-    "reaksi": "latest"
+    "reaksi": "^1.0.0-alpha.47"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
